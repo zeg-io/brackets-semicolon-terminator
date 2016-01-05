@@ -1,0 +1,2 @@
+# brackets-semicolon-terminator
+SHIFT+ENTER - > Puts semicolon at current line, creates and indents new line below. <br />ALT+ENTER - > Puts semicolon at current line, but keeps the cursor where it is. <br />Simple, useful. <br /><br />This is a modification to an original work which was inserting extra carriage returns and would continue to add semicolons to lines that already had them.  I also didn't like the shortcuts, so I updated to something that made more sense to me. <br />Based entirely on https://github.com/nechor/brackets-semicenter
