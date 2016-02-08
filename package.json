@@ -5,7 +5,7 @@
   "version": "0.9.1",
   "keywords": ["js, javascript, edit, editing, semicolon"],
   "author": "Tony Archer <tony@tonyarcher.com>",
-  "homepage": "https://github.com/nechor/brackets-semicenter ?????",
+  "homepage": "https://github.com/zeg-io/brackets-semicolon-terminator",
   "engines": {
     "brackets": ">=0.31.0"
   }
