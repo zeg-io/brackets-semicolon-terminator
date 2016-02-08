@@ -2,7 +2,7 @@
   "name": "brackets-semicolon-terminator",
   "title": "Semicolon Terminator",
   "description": "SHIFT+ENTER - > Puts semicolon at current line, creates and indents new line below. \nALT+ENTER - > Puts semicolon at the end of the current line, but keeps the cursor where it is. \nSimple, useful.\n\nThis is a modification to an original work which was inserting extra carriage returns and would continue to add semicolons to lines that already had them.  I also didn't like the shortcuts, so I updated to something that made more sense to me. \nBased entirely on https://github.com/nechor/brackets-semicenter",
-  "version": "0.1.8",
+  "version": "0.9.1",
   "keywords": ["js, javascript, edit, editing, semicolon"],
   "author": "Tony Archer <tony@tonyarcher.com>",
   "homepage": "https://github.com/nechor/brackets-semicenter ?????",
