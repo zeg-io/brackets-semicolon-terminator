@@ -20,7 +20,18 @@ define(function (require, exports, module) {
     }
     return spacesString;
   }
-  
+  function fileTypes(fileLang) {
+    switch (fileLang) {
+      case 'javascript':
+      case 'html':
+      case 'css':
+        return true;
+        break;
+      default:
+        return false;
+        break;
+    }
+  }
   function _keyEventHandler($event, editor, event) {
     var
       cursorPos = editor.getCursorPos(),
@@ -32,8 +43,7 @@ define(function (require, exports, module) {
     // On alt+ENTER pressed
     if (event.keyCode === KeyEvent.DOM_VK_RETURN && event.shiftKey) {
       // only for JavaScript
-      if (fileLang === 'javascript' || fileLang === 'html') {
-        
+      if (fileTypes(fileLang)) {
         editor.setCursorPos(cursorPos.line, currLineLen);
         cursorPos = editor.getCursorPos();
         if (currLine.substring(currLineLen-1,currLineLen)!==';') {
@@ -46,7 +56,7 @@ define(function (require, exports, module) {
     } else { 
       //on alt+; pressed
       if (event.keyCode === KeyEvent.DOM_VK_RETURN && event.altKey) {
-        if (fileLang === 'javascript' || fileLang === 'html' || fileLang === 'css') {
+        if (fileTypes(fileLang)) {
           var curCursorPos = editor.getCursorPos();
           editor.setCursorPos(cursorPos.line, currLine.length);
           cursorPos = editor.getCursorPos();
@@ -76,4 +86,3 @@ define(function (require, exports, module) {
   });
 
 });
-
