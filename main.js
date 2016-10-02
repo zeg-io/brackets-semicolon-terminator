@@ -16,9 +16,10 @@ define(function (require, exports, module) {
     for (i = 0; i < inLine.length; i += 1) {
       if (inLine[i].trim() === '') {
         spacesString += inLine[i];
+      } else {
+        return spacesString;
       }
     }
-    return spacesString;
   }
   function fileTypes(fileLang) {
     switch (fileLang) {
